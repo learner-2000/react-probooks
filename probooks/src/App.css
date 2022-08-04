@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: #297b31;
+  height: 8vh;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6vh;
+}
+
+h1 {
+  text-align: center;
+}
+.book-container {
+  position: relative;
+  margin: 0 3vh;
+  height: 33vh;
+  word-wrap: break-word;
+  width: 8vw;
+  font-size: 0.8em;
+}
+
+.book-container img {
+  height: 17vh;
+  width: 100%;
+  filter: drop-shadow(1px 1px 4px black);
+}
+
+.book-container select {
+  position: absolute;
+  border-radius: 50%;
+  width: 3vw;
+  height: 6vh;
+  color: #04be04;
+  background: #04be04;
+  outline: none;
+  border: none;
+  top: 13vh;
+  left: 11.5vh;
+  cursor: pointer;
+}
+
+.book-container option {
+  color: black;
+  background: white;
+}
+
+.book-container .arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 9px solid rgb(255, 255, 255);
+  top: 15.9vh;
+  right: 1vh;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.book-container .dis {
+  color: grey;
+  pointer-events: none;
+}
+
+.bname {
+  font-size: 1.9vh;
+  font-weight: 700;
+}
+
+.bauthor {
+  color: grey;
+}
+
+:is(.read, .like, .dislike, .search-books) {
+  height: 100%;
+  min-height: 10vh;
+  display: grid;
+  grid-template-columns: repeat(9, auto);
+  justify-content: center;
+  align-items: center;
+  grid-gap: 6vh 0;
+}
+
+.search-btn {
+  height: 8vh;
+  width: 4vw;
+  background: green;
+  position: fixed;
+  bottom: 3vh;
+  text-decoration: none;
+  color: white;
+  font-size: 5vh;
+  border-radius: 50%;
+  right: 4vh;
+  text-align: center;
+}
+
+.search-bar {
+  height: 7vh;
+  box-shadow: 0 0 14px 2px #00000087;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5vh;
+}
+
+.search-bar a {
+  text-decoration: none;
+  color: #565656;
+  font-size: 4vh;
+}
+
+.search-bar input[type="text"] {
+  width: 93%;
+  outline: none;
+  border: none;
+  font-size: 2.5vh;
+}
